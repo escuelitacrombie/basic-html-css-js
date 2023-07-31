@@ -1,26 +1,29 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  input {
-    padding: 5px;
-    margin: 10px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  #result {
-    margin-top: 20px;
-  }
-  
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url("/images/computer.png");
+  background-size: cover;
+}
+
+h1 {
+  color: #333;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+input {
+  padding: 5px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+}
