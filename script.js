@@ -12,4 +12,20 @@ function checkGuess() {
     } else {
         result.innerHTML = 'Intenta con un número más bajo.';
     }
+if (guess < 0) {
+result.innerHTML = 'El valor ingresado es incorrecto, debes ingresar un número mayor a 0.';
+// } else {
+// result.innerHTML = 'El número ingresado es válido.';
 }
+if (guess > 100) {
+    result.innerHTML = 'El valor ingresado es incorrecto, debes ingresar un número menor a 100.';
+    // } else {
+    // result.innerHTML = 'El número ingresado es válido.';
+    // }
+    }
+}
+
+//    contador = 0
+//  while True:
+//     contador += 1
+//     print("Intento número:", contador)
