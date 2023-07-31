@@ -1,7 +1,10 @@
-const randomNumber = Math.floor(Math.random() * 100) + 1;
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+
+function resetear() {
+    randomNumber = Math.floor(Math.random() * 100) + 1;
+}
 
 let intentos = 0;
-
 
 function checkGuess() {
     console.log("randomNumber", randomNumber);
