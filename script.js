@@ -5,7 +5,7 @@ function checkGuess() {
     console.log("randomNumber", randomNumber);
     let guess = parseInt(document.getElementById('guessInput').value);
     let result = document.getElementById('result');
-
+    let intentos = document.getElementById('intentos')
     if(guess < 0 || guess > 100 ) {
         result.innerHTML = 'please insert a valid value';
     }else{
@@ -24,6 +24,7 @@ function checkGuess() {
             //booleanAux == false
             document.getElementById("miBoton").disabled = true;
         }
+        intentos.innerHTML = chances;
         chances++;
     }
 
