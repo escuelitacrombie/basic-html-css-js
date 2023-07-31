@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html {
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/448/174/357/neon-4k-hd-best-for-desktop-wallpaper-preview.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+}
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: white;
   }
   
   h1 {
-    color: #333;
+    color: white;
   }
   
   input {
@@ -23,4 +32,5 @@ body {
   #result {
     margin-top: 20px;
   }
+  
   
