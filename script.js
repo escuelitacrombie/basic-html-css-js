@@ -1,4 +1,4 @@
-const randomNumber = Math.floor(Math.random() * 100) + 1;
+let randomNumber = Math.floor(Math.random() * 100) + 1;
 const intentosCounter = document.getElementById('intentos');
 let intentos = 0;
 
@@ -20,4 +20,8 @@ function checkGuess() {
         intentos++;
         intentosCounter.innerHTML = "Cantidad de intentos: " + intentos
     }
+}
+
+function resetNumber(){
+    randomNumber = Math.floor(Math.random() * 100) + 1
 }
