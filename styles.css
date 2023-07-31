@@ -1,6 +1,11 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    background-image: url("background/images.jpg") ;
   }
   
   h1 {
