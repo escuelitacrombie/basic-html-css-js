@@ -3,13 +3,18 @@
   <head>
     <title>Adivina el número</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/512/3056/3056361.png">
+    
   </head>
   <body>
     <h1>Adivina el número</h1>
     <p>Estoy pensando en un número entre 1 y 100. ¡Adivina cuál es!</p>
+    <button onclick="resetear()">Resetear numero</button>
+    <br>
     <input type="number" id="guessInput" placeholder="Ingresa tu número" />
     <button onclick="checkGuess()">Adivinar</button>
     <p id="result"></p>
+    <h3>Intentos: <p id="intentos"></p></h3>
   </body>
 
   <script src="script.js"></script>
