@@ -3,13 +3,44 @@
   <head>
     <title>Adivina el número</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="img/jpg" href="img/favicon-32x32.png">
+
   </head>
   <body>
     <h1>Adivina el número</h1>
     <p>Estoy pensando en un número entre 1 y 100. ¡Adivina cuál es!</p>
     <input type="number" id="guessInput" placeholder="Ingresa tu número" />
     <button onclick="checkGuess()">Adivinar</button>
+    <button onclick="reCargar()">Refrescar num</button>
     <p id="result"></p>
+    <p id="rCont"></p>
+    <hr>
+    <div>
+      <h2>Ejercicios</h2>
+
+      <div>
+        <h3>1-Validación>0</h3>
+        <input type="number" id="num" placeholder="Valida tu número" />
+        <button onclick="valNum()">Validar</button>
+        <p id="resp"></p>
+        
+      </div>
+      
+      <div>
+        <h3>2-Validación>100</h3>
+        <input type="number" id="num2" placeholder="Valida tu número" />
+        <button onclick="valNum2()">Validar</button>
+        <p id="resp2"></p>
+      </div>
+      <hr>
+      
+    </div>
   </body>
 
   <script src="script.js"></script>
