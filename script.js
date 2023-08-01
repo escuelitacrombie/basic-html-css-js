@@ -11,9 +11,9 @@ function checkGuess() {
         result.innerHTML = '¡Felicitaciones! ¡Adivinaste el número!';
         int=0;
         randomNumber = Math.floor(Math.random() * 100) + 1;
-    }else if(guess < 0){
+    }else if(guess < 1){
         result.innerHTML = 'El valor ingresado no es correcto, debes ingresar un numero mayor que 0.';
-    }else if(guess > 100){
+    }else if(guess > 99){
         result.innerHTML = 'El valor ingresado no es correcto, debes ingresar un numero menor que 100.';
     }  else if (guess < randomNumber) {
         int ++

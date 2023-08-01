@@ -4,6 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     background-image: url("cielo.jpg");
+    background-size: cover;
   }
   
   h1 {
