@@ -1,6 +1,10 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 let cont=0;
 
+function reCargar(){
+    randomNumber = Math.floor(Math.random() * 100) + 1;
+    cont=0;
+}
 function checkGuess() {
     console.log("randomNumber", randomNumber);
     
@@ -49,6 +53,4 @@ function valNum2(){
         }
     
 }
-function reCargar(){
-    randomNumber=randomNumber*2;
-}
+
