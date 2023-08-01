@@ -3,13 +3,19 @@
   <head>
     <title>Adivina el número</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <h1>Adivina el número</h1>
     <p>Estoy pensando en un número entre 1 y 100. ¡Adivina cuál es!</p>
     <input type="number" id="guessInput" placeholder="Ingresa tu número" />
-    <button onclick="checkGuess()">Adivinar</button>
+    <button onclick="checkGuess()" class="btnactivation">Adivinar</button>
     <p id="result"></p>
+    <p id="counter"></p>
+    <button onclick="reset()">Reiniciar juego</button>
   </body>
 
   <script src="script.js"></script>

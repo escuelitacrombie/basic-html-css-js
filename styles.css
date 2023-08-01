@@ -1,6 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
+    background-image: url("./assets/bgimage.png");
   }
   
   h1 {
