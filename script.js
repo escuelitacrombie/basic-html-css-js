@@ -1,36 +1,28 @@
 const randomNumber = Math.floor(Math.random() * 100) + 1;
-let intentos = 0;
-let booleanoAux = true;
-
+let clicks = 0;
 
 function checkGuess() {
     console.log("randomNumber", randomNumber);
+    clickCount()
     let guess = parseInt(document.getElementById('guessInput').value);
     let result = document.getElementById('result');
-    let intento = document.getElementById("intentos");
-    if (guess > 100 || guess < 0) {
-        result.innerHTML = "El numero ingresado no está dentro de los parametros"
+
+    if (guess <= 0) {
+        result.innerHTML = 'Valor ingresado es incorrecto, debes ingresar un número mayor a 0.';
+    } else if (guess === randomNumber) {
+        result.innerHTML = '¡Felicitaciones! ¡Adivinaste el número!';
+    } else if (guess < randomNumber) {
+        result.innerHTML = 'Intenta con un número más alto.';
+    } else if (guess > 100) {
+        result.innerHTML = 'El número no puede ser mayor a 100';
+    } else if (guess > randomNumber) {
+        result.innerHTML = 'Intenta con un número más bajo.';
+    } else {
+        result.innerHTML = 'El número es inválido';
     }
-    else {
-        if (guess === randomNumber) {
-            result.innerHTML = '¡Felicitaciones! ¡Adivinaste el número!';
-        } else if (guess < randomNumber) {
-            result.innerHTML = 'Intenta con un número más alto.';
-        }
-        else {
-            result.innerHTML = 'Intenta con un número más bajo.';
-        }
-        if (intentos == 5) {
-            result.innerHTML = "Te quedaste sin intentos"
-            document.getElementById("button-adivinar").disabled = true;
-
-        }
-        intentos++
-        intento.innerHTML = intentos;
-        console.log(intentos);
-    }
-
-
-
 }
-
+function clickCount(){
+    clicks++
+    document.getElementById("clicks").innerHTML = clicks;
+    console.log(clicks)
+}

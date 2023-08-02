@@ -1,12 +1,13 @@
 body {
+    font-family: Montserrat, Arial, sans-serif;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    background-image: url(background2.png);
+    background-size: cover;
   }
   
   h1 {
     color: #333;
   }
-  
   input {
     padding: 5px;
     margin: 10px;
@@ -19,15 +20,8 @@ body {
     border: none;
     cursor: pointer;
   }
-
-  button:disabled{
-    background-color: red;
-  }
   
   #result {
     margin-top: 20px;
   }
   
-  #intento {
-    margin-top: 50px;
-  }
