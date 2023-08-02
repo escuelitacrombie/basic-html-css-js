@@ -8,13 +8,12 @@ function checkGuess() {
     let guess = parseInt(document.getElementById('guessInput').value);
     let result = document.getElementById('result');
     let rCont=document.getElementById('rCont');
-    let desab = document.getElementById('desab');
         
         if(guess>=0 && guess<=100){
             if(cont<10){
                 if (guess === randomNumber) {
                     result.innerHTML = '¡Felicitaciones! ¡Adivinaste el número!';
-                    desab.disabled = true;
+                    document.getElementById('desab').disabled = true;
                 }
                 else if(guess < randomNumber) {
                     cont++;
@@ -30,8 +29,7 @@ function checkGuess() {
             }
             else{
                 result.innerHTML='Perdiste! Llegaste al limite de intentos';
-                desab.disabled = true;
-                desab.style.backgroundColor = 'red';
+                document.getElementById('desab').disabled = true;
             }
         }
         else{
@@ -41,15 +39,13 @@ function checkGuess() {
 function reCargar(){
     let result = document.getElementById('result');
     let rCont=document.getElementById('rCont');
-    let desab = document.getElementById('desab');
 
     randomNumber = Math.floor(Math.random() * 100) + 1;
     cont=0;
 
     result.innerHTML='';
     rCont.innerHTML='';
-    desab.disable= false;
-    desab.style.backgroundColor = '#4caf50';
+    document.getElementById('desab').disabled = false;
 }
 
 
