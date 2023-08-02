@@ -1,33 +1,34 @@
 body {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  input {
-    padding: 5px;
-    margin: 10px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg');
+}
 
-  button:disabled{
-    background-color: red;
-  }
-  
-  #result {
-    margin-top: 20px;
-  }
-  
-  #intento {
-    margin-top: 50px;
-  }
+h1 {
+  color: #333;
+}
+
+input {
+  padding: 5px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: red;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+#intento {
+  margin-top: 50px;
+}
