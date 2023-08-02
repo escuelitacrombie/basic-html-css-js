@@ -1,14 +1,10 @@
 body {
-  font-family: Arial, sans-serif;
   text-align: center;
-  background-image: url("/images/computer.png");
-  background-size: cover;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
   color: #333;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 input {
@@ -24,6 +20,14 @@ button {
   cursor: pointer;
 }
 
+button:disabled {
+  background-color: red;
+}
+
 #result {
   margin-top: 20px;
+}
+
+#intento {
+  margin-top: 50px;
 }

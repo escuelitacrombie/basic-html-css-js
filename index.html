@@ -3,18 +3,24 @@
   <head>
     <title>Adivina el número</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="/images/computer.png" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1>Adivina el número</h1>
     <p>Estoy pensando en un número entre 1 y 100. ¡Adivina cuál es!</p>
     <input type="number" id="guessInput" placeholder="Ingresa tu número" />
-    <div id="disable">
-      <button onclick="checkGuess()">Adivinar</button>
-    </div>
-    <div id="reload"></div>
+    <button state="disabled" onclick="checkGuess()" id="button-adivinar">
+      Adivinar
+    </button>
+
     <p id="result"></p>
-    <p id="attempt"></p>
+    <p id="intentos"></p>
   </body>
 
   <script src="script.js"></script>
