@@ -25,7 +25,10 @@ body {
     border: none;
     cursor: pointer;
   }
-  
+  #reiniciar{
+    background-color: red;
+    margin: 20px;
+  }
   #result {
     margin-top: 20px;
     font-size: 30px;
