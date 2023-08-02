@@ -1,7 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
     text-align: center;
-
+    
     background-color: #0093E9;
   }
   
@@ -20,6 +19,10 @@ body {
     color: white;
     border: none;
     cursor: pointer;
+  }
+
+  button:disabled{
+    background-color: red;
   }
   
   #result {
