@@ -3,9 +3,12 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
     text-align: center;
+<<<<<<< HEAD
     background-image: url("background/images.jpg") ;
+=======
+    font-family: 'Roboto', sans-serif;
+>>>>>>> 8ee257dc3e792953616160c2421a825369181c20
   }
   
   h1 {
@@ -24,8 +27,15 @@ body {
     border: none;
     cursor: pointer;
   }
+
+  button:disabled{
+    background-color: red;
+  }
   
   #result {
     margin-top: 20px;
   }
   
+  #intento {
+    margin-top: 50px;
+  }
