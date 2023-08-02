@@ -21,7 +21,7 @@ function checkGuess() {
                 contador++;
             }
 
-            tirada.innerHTML = contador;
+            tirada.innerHTML = "Numero de intentos: "+contador;
         } else {
             result.innerHTML = 'No es un numero valido';
         }
@@ -34,7 +34,7 @@ function resetGame() {
     randomNumber = Math.floor(Math.random() * 100) + 1;
     contador = 0;
     document.getElementById("miBoton").disabled = false;
-    tirada.innerHTML = contador;
+    tirada.innerHTML ="Numero de intentos: "+ contador;
     result.innerHTML = 'Encuentra el número!';
     guess.value="";
 }
