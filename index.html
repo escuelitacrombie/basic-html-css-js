@@ -16,31 +16,13 @@
     <h1>Adivina el número</h1>
     <p>Estoy pensando en un número entre 1 y 100. ¡Adivina cuál es!</p>
     <input type="number" id="guessInput" placeholder="Ingresa tu número" />
-    <button onclick="checkGuess()">Adivinar</button>
-    <button onclick="reCargar()">Refrescar num</button>
+    <button id="desab" onclick="checkGuess()">Adivinar</button>
+    <button onclick="reCargar()">Refrescar</button>
+    <p id="rCont"></p>
     <p id="result"></p>
     <p id="rCont"></p>
-    <hr>
-    <div>
-      <h2>Ejercicios</h2>
-
-      <div>
-        <h3>1-Validación>0</h3>
-        <input type="number" id="num" placeholder="Valida tu número" />
-        <button onclick="valNum()">Validar</button>
-        <p id="resp"></p>
-        
-      </div>
-      
-      <div>
-        <h3>2-Validación>100</h3>
-        <input type="number" id="num2" placeholder="Valida tu número" />
-        <button onclick="valNum2()">Validar</button>
-        <p id="resp2"></p>
-      </div>
-      <hr>
-      
-    </div>
+    
+    
   </body>
 
   <script src="script.js"></script>

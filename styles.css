@@ -26,3 +26,8 @@ body {
     margin-top: 20px;
   }
   
+
+  /* Cambiar colorsito boton */
+  #desab[disabled] {
+    background-color: red;
+  }
