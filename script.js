@@ -9,8 +9,7 @@ function checkGuess() {
     let result = document.getElementById('result');
     let rCont=document.getElementById('rCont');
         
-        if(guess>=0 && guess<=100){
-            if(cont<10){
+        if(guess>=0 && guess<=100 && cont<10){//Evite que el cont llegue a 11
                 if (guess === randomNumber) {
                     result.innerHTML = '¡Felicitaciones! ¡Adivinaste el número!';
                     document.getElementById('desab').disabled = true;
@@ -26,14 +25,13 @@ function checkGuess() {
                     result.innerHTML = 'Intenta con un número más bajo.';
                     rCont.innerHTML = 'Numero de intentos: '+cont;
                 } 
-            }
-            else{
-                result.innerHTML='Perdiste! Llegaste al limite de intentos';
-                document.getElementById('desab').disabled = true;
-            }
         }
         else{
             result.innerHTML='Debe ser un numero mayor a cero y menor a 100';
+        }
+        if(cont==10){
+            result.innerHTML='Llegaste al limite de intentos';
+            document.getElementById('desab').disabled = true;
         }
 }
 function reCargar(){
