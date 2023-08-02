@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+
+    background-image: url("https://fondosmil.com/fondo/54342.jpg");
   }
   
   h1 {
@@ -19,8 +21,18 @@ body {
     border: none;
     cursor: pointer;
   }
-  
+
+  #miBoton:disabled{
+    background-color: red;
+  }
+
   #result {
     margin-top: 20px;
+
+  }
+
+  #tirada{
+    margin-top: 20px; 
+    background-color: aliceblue;
   }
   
