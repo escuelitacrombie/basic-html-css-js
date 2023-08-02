@@ -20,7 +20,6 @@ function checkGuess() {
     } else {
         result.innerHTML = 'El número es inválido';
     }
-
 }
 function clickCount(){
     clicks++
