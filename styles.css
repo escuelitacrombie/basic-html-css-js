@@ -1,6 +1,6 @@
 body {
+    font-family: Arial, sans-serif;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
   }
   
   h1 {
@@ -19,15 +19,8 @@ body {
     border: none;
     cursor: pointer;
   }
-
-  button:disabled{
-    background-color: red;
-  }
   
   #result {
     margin-top: 20px;
   }
   
-  #intento {
-    margin-top: 50px;
-  }
