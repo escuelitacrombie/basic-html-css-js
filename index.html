@@ -3,13 +3,17 @@
   <head>
     <title>Adivina el número</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" href="https://i.pinimg.com/1200x/82/6b/c9/826bc98f8f6290c598b5418ee38fb6e5.jpg" type="image/x-icon">
   </head>
   <body>
     <h1>Adivina el número</h1>
     <p>Estoy pensando en un número entre 1 y 100. ¡Adivina cuál es!</p>
     <input type="number" id="guessInput" placeholder="Ingresa tu número" />
-    <button onclick="checkGuess()">Adivinar</button>
+    <button id="miBoton" onclick="checkGuess()">Adivinar</button>
+    <button id="reset" onclick="resetGame()">Reiniciar</button>
+    
     <p id="result"></p>
+    <p id="tiradas"></p>
   </body>
 
   <script src="script.js"></script>
