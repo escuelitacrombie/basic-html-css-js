@@ -1,36 +1,51 @@
-const randomNumber = Math.floor(Math.random() * 100) + 1;
-let intentos = 0;
-let booleanoAux = true;
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+let cont=0;
 
 
 function checkGuess() {
     console.log("randomNumber", randomNumber);
+    
     let guess = parseInt(document.getElementById('guessInput').value);
     let result = document.getElementById('result');
-    let intento = document.getElementById("intentos");
-    if (guess > 100 || guess < 0) {
-        result.innerHTML = "El numero ingresado no está dentro de los parametros"
-    }
-    else {
-        if (guess === randomNumber) {
-            result.innerHTML = '¡Felicitaciones! ¡Adivinaste el número!';
-        } else if (guess < randomNumber) {
-            result.innerHTML = 'Intenta con un número más alto.';
+    let rCont=document.getElementById('rCont');
+        
+        if(guess>=0 && guess<=100 && cont<10){//Evite que el cont llegue a 11
+                if (guess === randomNumber) {
+                    result.innerHTML = '¡Felicitaciones! ¡Adivinaste el número!';
+                    document.getElementById('desab').disabled = true;
+                }
+                else if(guess < randomNumber) {
+                    cont++;
+                    result.innerHTML = 'Intenta con un número más alto.';
+                    rCont.innerHTML = 'Numero de intentos: '+cont;
+                    
+                    
+                }else {
+                    cont++;
+                    result.innerHTML = 'Intenta con un número más bajo.';
+                    rCont.innerHTML = 'Numero de intentos: '+cont;
+                } 
         }
-        else {
-            result.innerHTML = 'Intenta con un número más bajo.';
+        else{
+            result.innerHTML='Debe ser un numero mayor a cero y menor a 100';
         }
-        if (intentos == 5) {
-            result.innerHTML = "Te quedaste sin intentos"
-            document.getElementById("button-adivinar").disabled = true;
-
+        if(cont==10){
+            result.innerHTML='Llegaste al limite de intentos';
+            document.getElementById('desab').disabled = true;
         }
-        intentos++
-        intento.innerHTML = intentos;
-        console.log(intentos);
-    }
-
-
-
 }
+function reCargar(){
+    let result = document.getElementById('result');
+    let rCont=document.getElementById('rCont');
+
+    randomNumber = Math.floor(Math.random() * 100) + 1;
+    cont=0;
+
+    result.innerHTML='';
+    rCont.innerHTML='';
+    document.getElementById('desab').disabled = false;
+}
+
+
+
 

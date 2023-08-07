@@ -1,6 +1,7 @@
 body {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    
+    background-color: #0093E9;
   }
   
   h1 {
@@ -28,6 +29,8 @@ body {
     margin-top: 20px;
   }
   
-  #intento {
-    margin-top: 50px;
+
+  /* Cambiar colorsito boton */
+  #desab[disabled] {
+    background-color: red;
   }
