@@ -1,36 +1,31 @@
-const randomNumber = Math.floor(Math.random() * 100) + 1;
-let intentos = 0;
-let booleanoAux = true;
+let randomNumber;
+let numIntentos = 0;
 
+document.addEventListener("DOMContentLoaded", function () {
+    resetGame()
+});
 
-function checkGuess() {
-    console.log("randomNumber", randomNumber);
-    let guess = parseInt(document.getElementById('guessInput').value);
-    let result = document.getElementById('result');
-    let intento = document.getElementById("intentos");
-    if (guess > 100 || guess < 0) {
-        result.innerHTML = "El numero ingresado no está dentro de los parametros"
-    }
-    else {
-        if (guess === randomNumber) {
-            result.innerHTML = '¡Felicitaciones! ¡Adivinaste el número!';
-        } else if (guess < randomNumber) {
-            result.innerHTML = 'Intenta con un número más alto.';
-        }
-        else {
-            result.innerHTML = 'Intenta con un número más bajo.';
-        }
-        if (intentos == 5) {
-            result.innerHTML = "Te quedaste sin intentos"
-            document.getElementById("button-adivinar").disabled = true;
-
-        }
-        intentos++
-        intento.innerHTML = intentos;
-        console.log(intentos);
-    }
-
-
-
+function resetGame() {
+    randomNumber = Math.floor(Math.random() * 100) + 1;
+    numIntentos = 0
+    intentos.innerHTML = 'Intentos: ' + numIntentos
+    result.innerHTML = ''
+    document.getElementById('guessInput').value = '';
 }
 
+function checkGuess() {
+    let guess = parseInt(document.getElementById('guessInput').value);
+    let result = document.getElementById('result');
+    let intentos = document.getElementById('intentos')
+    if (guess === randomNumber) {
+        result.innerHTML = '¡Felicitaciones! ¡Adivinaste el número!';
+    } else if (guess < randomNumber && guess > 0 && guess < 101) {
+        result.innerHTML = 'Intenta con un número más alto.';
+    } else if (guess > randomNumber && guess > 0 && guess < 101) {
+        result.innerHTML = 'Intenta con un número más bajo.';
+    } else if (guess < 0 || guess > 101) {
+        result.innerHTML = 'Ingresa un numero entre 1 y 100'
+    }
+    numIntentos++
+    intentos.innerHTML = 'Intentos: ' + numIntentos
+}
